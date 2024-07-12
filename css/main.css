@@ -179,4 +179,133 @@ h1, h2, h3, strong {
     width: 100%;
     display: block;
   }
+}
+#features {
+  margin-top: 67px;
+}
+
+.features {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  padding: 40px;
+}
+.features__feature {
+  border-left: 1px solid rgb(215, 215, 221);
+  padding-left: 64px;
+}
+.features__feature:nth-child(1) {
+  border-left: none;
+  padding-left: 40px;
+}
+
+.feature__wrapper {
+  max-width: 230px;
+  width: 100%;
+}
+.feature__icon {
+  max-width: 92px;
+  width: 100%;
+  height: 92px;
+  display: grid;
+  place-items: center;
+  background-color: rgb(233, 233, 236);
+  border-radius: 50%;
+}
+.feature__title {
+  margin-top: 24px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+  color: rgb(54, 55, 56);
+}
+.feature__text {
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(107, 107, 108);
+}
+
+@media (max-width: 1120px) {
+  .features__feature {
+    padding-left: 40px;
+  }
+  .features__feature:nth-child(1) {
+    padding-left: 0px;
+  }
+}
+@media (max-width: 992px) {
+  #features {
+    margin-top: 41px;
+  }
+  .features {
+    flex-direction: column;
+    padding: 0px;
+    gap: 16px;
+    box-shadow: none;
+  }
+  .features__feature {
+    width: 100%;
+    padding: 32px;
+    border: none;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .features__feature:hover {
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3);
+  }
+  .features__feature:nth-child(1) {
+    padding-left: 32px;
+  }
+  .feature__wrapper {
+    max-width: 100%;
+    display: flex;
+    gap: 32px;
+  }
+  .feature__info {
+    max-width: 400px;
+    width: 100%;
+  }
+  .feature__title {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 576px) {
+  #features {
+    margin-top: 56px;
+  }
+  .features {
+    padding: 24px 27px 32px 32px;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+    gap: 24px;
+  }
+  .features__feature {
+    box-shadow: none;
+    padding: 0px;
+  }
+  .features__feature:nth-child(1) {
+    padding-left: 0px;
+  }
+  .feature__wrapper {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .feature__info {
+    max-width: 100%;
+  }
+  .feature__title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .feature__text {
+    font-size: 15px;
+    line-height: 22px;
+  }
 }/*# sourceMappingURL=main.css.map */
