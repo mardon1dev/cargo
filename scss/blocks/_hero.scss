@@ -40,11 +40,6 @@
             }
         }
     }
-    &__img{
-        &--image:nth-child(2), &--image:nth-child(3){
-            display: none;
-        }
-    }
 }
 
 @media (max-width:1220px) {
@@ -86,16 +81,11 @@
                 line-height: 55px;
             }
         }
-
         &__img{
             width: 100%;
-            &--image:nth-child(1){
-                display: none;
-            }
-            &--image:nth-child(2){
-                display: block;
+            &--image{
                 width: 100%;
-            }   
+            }
         }
     }
 }
@@ -115,15 +105,5 @@
                 line-height: 35px;
             }
         }
-        &__img{
-            &--image:nth-child(2){
-                display: none;
-            }
-            &--image:nth-child(3){
-                width: 100%;
-                display: block;
-            }
-        }
-
     }
 }
