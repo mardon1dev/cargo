@@ -16,11 +16,11 @@
         padding-left: 40px;
     }
 }
-.feature{
-    &__wrapper{
-        max-width: 230px;
-        width: 100%;
-    }
+.feature__wrapper{
+    max-width: 230px;
+    width: 100%;
+}
+.feature, .item{
     &__icon{
         max-width: 92px;
         width: 100%;
@@ -32,7 +32,7 @@
     }
     &__title{
         margin-top: 24px;
-        @include textStyle($fs:20px, $fw:600, $lh:27px, $clr:$title-color)
+        @include textStyle($fs:20px, $fw:600, $lh:27px, $clr:$title-color);
     }
     &__text{
         margin-top: 16px;
