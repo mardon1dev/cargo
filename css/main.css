@@ -607,4 +607,33 @@ h1, h2, h3, strong {
   #delivery {
     display: none;
   }
+}
+#video {
+  margin-top: 62px;
+}
+
+.video {
+  width: 100%;
+  position: relative;
+}
+.video__video {
+  cursor: pointer;
+  width: 100%;
+  height: TOP;
+}
+.video__play {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.video__play svg {
+  padding-left: 5px;
 }/*# sourceMappingURL=main.css.map */
