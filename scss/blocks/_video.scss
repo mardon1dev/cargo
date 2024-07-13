@@ -4,6 +4,9 @@
 .video{
     width: 100%;
     position: relative;
+    &__title{
+        display: none;
+    }
     &__video{
         cursor: pointer;
         width: 100%;

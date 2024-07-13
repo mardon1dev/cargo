@@ -613,6 +613,9 @@ h1, h2, h3, strong {
   width: 100%;
   position: relative;
 }
+.video__title {
+  display: none;
+}
 .video__video {
   cursor: pointer;
   width: 100%;
