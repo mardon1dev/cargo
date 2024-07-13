@@ -1,0 +1,113 @@
+#completed-work{
+    margin-top: 120px;
+}
+.completed-work{
+    width: 100%;
+    &__info{
+        max-width: 535px;
+        width: 100%;
+    }
+    &__title{
+        @include textStyle($fs:48px, $fw:600, $lh:60px, $clr:$title-color);
+    }
+    &__text{
+        margin-top: 32px;
+        @include textStyle($fs:16px, $fw:400, $lh:24px, $clr:$text-color);
+    }
+    &__types{
+        margin-top: 56px;
+        @include display($direction:row, $items:flex-start, $justify:space-between);
+        gap: 30px;
+    }
+    &__type{
+        max-width: 393px;
+        width: 100%;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.12);
+        border-radius: 10px;
+        transition: all .3s linear;
+        &:hover{
+            box-shadow: 0px 4px 15px 0px rgba(0,0, 0, 0.2);
+        }
+        &--img{
+            width: 100%;
+            height: auto;
+        }
+        &--info{
+            padding: 24px 32px 32px;
+        }
+        &--title{
+            margin-bottom: 16px;
+            @include textStyle($fs:20px, $fw:600, $lh:27px, $clr:$title-color);
+        }
+        &--text{
+            margin-bottom: 32px;
+            @include textStyle($fs:16px, $fw:400, $lh:24px, $clr:$text-color);
+        }
+        &--strong{
+            &::after{
+                bottom: -10px;
+            }
+            &:hover::after{
+                bottom: 0px;
+            }
+        }
+    }
+}
+@media (max-width:992px) {
+    .completed-work{
+        &__types{
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        &__type{
+            max-width: 48%;
+            &:nth-child(3){
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width:860px) {
+    .completed-work{
+        &__title{
+            font-size: 44px;
+            line-height: 55px;
+        }
+        &__types{
+            margin-top: 40px;
+            gap: 32px;
+        }
+        &__type{
+            max-width: 100%;
+        }
+    }
+}
+@media (max-width:576px) {
+    .completed-work{
+        &__title{
+            font-size: 28px;
+            line-height: 35px;
+        }
+        &__text{
+            font-size: 15px;
+            line-height: 22.5px;
+        }
+        &__type{
+            &--img{
+                object-fit: contain;
+            }
+            &--title{
+                font-size: 18px;
+                line-height: 24px;
+            }
+            &--text{
+                font-size: 15px;
+                line-height: 22.5px;
+            }
+            &:nth-child(2){
+                display: none;
+            }
+        }
+    }
+}

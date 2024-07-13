@@ -402,4 +402,124 @@ h1, h2, h3, strong {
   #why-us {
     display: none;
   }
+}
+#completed-work {
+  margin-top: 120px;
+}
+
+.completed-work {
+  width: 100%;
+}
+.completed-work__info {
+  max-width: 535px;
+  width: 100%;
+}
+.completed-work__title {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+  color: rgb(54, 55, 56);
+}
+.completed-work__text {
+  margin-top: 32px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(107, 107, 108);
+}
+.completed-work__types {
+  margin-top: 56px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+}
+.completed-work__type {
+  max-width: 393px;
+  width: 100%;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  transition: all 0.3s linear;
+}
+.completed-work__type:hover {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.2);
+}
+.completed-work__type--img {
+  width: 100%;
+  height: auto;
+}
+.completed-work__type--info {
+  padding: 24px 32px 32px;
+}
+.completed-work__type--title {
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+  color: rgb(54, 55, 56);
+}
+.completed-work__type--text {
+  margin-bottom: 32px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(107, 107, 108);
+}
+.completed-work__type--strong::after {
+  bottom: -10px;
+}
+.completed-work__type--strong:hover::after {
+  bottom: 0px;
+}
+
+@media (max-width: 992px) {
+  .completed-work__types {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .completed-work__type {
+    max-width: 48%;
+  }
+  .completed-work__type:nth-child(3) {
+    display: none;
+  }
+}
+@media (max-width: 860px) {
+  .completed-work__title {
+    font-size: 44px;
+    line-height: 55px;
+  }
+  .completed-work__types {
+    margin-top: 40px;
+    gap: 32px;
+  }
+  .completed-work__type {
+    max-width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .completed-work__title {
+    font-size: 28px;
+    line-height: 35px;
+  }
+  .completed-work__text {
+    font-size: 15px;
+    line-height: 22.5px;
+  }
+  .completed-work__type--img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .completed-work__type--title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .completed-work__type--text {
+    font-size: 15px;
+    line-height: 22.5px;
+  }
+  .completed-work__type:nth-child(2) {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
