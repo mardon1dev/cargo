@@ -23,6 +23,10 @@
         @include textStyle($fs:13px, $fw:600, $lh:19.5px, $clr:white);
         letter-spacing: 0.16em;
         text-transform: capitalize;
+        transition: all .3s linear;
+        &:hover{
+            color: $secondary-color;
+        }
     }
     &__social{
         @include display($direction:column, $items:flex-start, $justify:space-evenly);
@@ -49,6 +53,10 @@
     }
     &__phone{
         @include textStyle($fs:13px, $fw:600, $lh:19.5px, $clr:white);
+        transition: all .3s linear;
+        &:hover{
+            color: $secondary-color;
+        }
     }
     &__link-to-room{
         padding: 8px 11px;
@@ -57,6 +65,12 @@
         background-color: $secondary-color;
         color: white;
         text-transform: uppercase;
+        border: 1px solid $secondary-color;
+        transition: all .3s linear;
+        &:hover{
+            background-color: $main-color;
+            color: $secondary-color;
+        }
     }
     &__bottom{
         padding-bottom: 29px;
